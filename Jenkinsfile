@@ -18,16 +18,16 @@ import hudson.model.*
 import org.jenkinsci.plugins.scriptsecurity.sandbox.RejectedAccessException
 
 // Git url of the repo/folder where this Jenkinsfile is placed
-jenkinsfileURL = "" //Eg: https://github.com/abhinabsarkar/apiconnect-pipeline-jenkins/blob/master/src/Jenkinsfile
+jenkinsfileURL = "https://github.com/mr-yadav235/OpenAPI" //Eg: https://github.com/abhinabsarkar/apiconnect-pipeline-jenkins/blob/master/src/Jenkinsfile
 jenkinsfileBranch = "master"
 
 //Credential objects defined in Jenkins
 gitCredentials = ""
 
 //Product yaml file
-def product = "" //Eg: "sample-product_1.0.0.yaml"
+def product = "jenkins-test" //Eg: "sample-product_1.0.0.yaml"
 //Name of the API Product in yaml file
-def productName = "" //Eg: "sample-product"
+def productName = "ecollection_1.0.0" //Eg: "sample-product"
 
 node('jenkins-agent-apic2018-linux') { //This is the label which is defined in Jenkins Master and runs in worker node
 
