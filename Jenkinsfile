@@ -7,15 +7,15 @@ Publishing to Production requires Change Control.
 */
 
 //Import libraries
-import hudson.util.Secret
-import java.text.SimpleDateFormat
-import org.apache.commons.lang3.time.DateUtils
-import hudson.AbortException
-import java.io.File
+import hudson.util.Secret.*
+import java.text.SimpleDateFormat.*
+import org.apache.commons.lang3.time.DateUtils.*
+import hudson.AbortException.*
+import java.io.File.*
 //Import libraries for RejectedAccessException
 import jenkins.model.*
 import hudson.model.*
-import org.jenkinsci.plugins.scriptsecurity.sandbox.RejectedAccessException
+import org.jenkinsci.plugins.scriptsecurity.sandbox.RejectedAccessException.*
 
 // Git url of the repo/folder where this Jenkinsfile is placed
 jenkinsfileURL = "https://github.com/mr-yadav235/OpenAPI" //Eg: https://github.com/abhinabsarkar/apiconnect-pipeline-jenkins/blob/master/src/Jenkinsfile
@@ -298,9 +298,7 @@ def ValidateCCAndDeploy(String server, String creds, String product, String cata
                                      
             changeOption = false                     
         }
-        else{   
-                //Change should not be promoted to Production         
-                throw new AbortException("FAILED")
-        }
-    }    
-}
+        
+        
+      
+
